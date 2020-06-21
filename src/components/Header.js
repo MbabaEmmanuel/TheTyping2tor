@@ -1,8 +1,8 @@
 const Header = () => {
 	const template = `
     <header>
-      <h1>My Parcel App</h1>
-      <p>This is a boilerplate for a simple vanilla JS workflow using the Parcel bundler.</p>
+      <h1>Welcome to The Typing Tutor!</h1>
+      <p>Type the text below one letter at a time to improve your typing skills!</p>
     </header>
   `;
 

@@ -1,3 +1,4 @@
+// This is boilerplate stuff, let's keep it around for reference.
 import axios from 'axios';
 
 const User = async () => {

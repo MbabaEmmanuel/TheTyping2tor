@@ -1,12 +1,14 @@
 import Header from './components/Header'
-import User from './components/User'
+import MainTextBox from './components/MainTextBox'
+import LiveTextBox from './components/LiveTextBox'
 
 async function App() {
   const template = document.createElement('template')
   template.innerHTML = `
     <div class="container">
       ${Header()}
-      ${await User()}
+      ${MainTextBox()}
+      ${LiveTextBox()}
     </div>
   `
   // Return a new node from template
