@@ -10,6 +10,7 @@ const MainTextBox = () => {
       <div class="card-body">
         ${sentence.split(" ").map((word, index) => {
           let isCurrentWord = index === currentWordIndex;
+
           return Word(word, isCurrentWord);
         }).join(" ")}
       </div>

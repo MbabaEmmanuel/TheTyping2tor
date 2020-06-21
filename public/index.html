@@ -4,6 +4,28 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Vanilla Parcel Boilerplate</title>
+                <script>
+                  const keypress = (inputElement, event) => {
+                    const text = inputElement.value;
+                    const currentWordElement = document.getElementsByClassName('currentword')[0];
+                    if (event.key === "Backspace") {
+                      //the letter has already been deleted. So the "length" of the input text is 1 less
+                      //than the amount of highlighted letters.
+                      const correspondingLetterElement = currentWordElement.children[text.length];
+                      correspondingLetterElement.style.color = "";
+
+                    }
+                    const letterEnetered = text.split("")[text.length - 1]
+
+                    const correspondingLetterElement = currentWordElement.children[text.length - 1];
+
+                    if (letterEnetered === correspondingLetterElement.innerText) {
+                        correspondingLetterElement.style.color = 'white';
+                    } else {
+                        correspondingLetterElement.style.color = 'red';
+                    }
+                  }
+                </script>
 	</head>
 	<body>
 		<noscript>
